@@ -1,0 +1,7 @@
+{
+  "rage_stage3_music": {
+    "sounds": [
+      { "name": "ragemod:rage_stage3", "stream": true }
+    ]
+  }
+}

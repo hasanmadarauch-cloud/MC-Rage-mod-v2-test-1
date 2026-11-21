@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "ragemod",
+  "version": "${version}",
+  "name": "Rage Mod",
+  "description": "Yeterince sinirlenince delir. Evcil hayvanimi oldurenler bedelini oder.",
+  "authors": ["You", "Claude"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ragemod.RageMod"],
+    "client": ["com.ragemod.client.RageModClient"]
+  },
+  "mixins": [
+    "ragemod.mixins.json",
+    { "config": "ragemod.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
